@@ -1,0 +1,301 @@
+body {
+    background: #0F0F0F;
+    height: 2000px;
+}
+
+.dev-canvas {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    display: block;
+    line-height: 1;
+    list-style: none;
+    interpolate-size: allow-keywords;
+}
+
+.dev-canvas h1, .dev-canvas h2, .dev-canvas h3, .dev-canvas h4, .dev-canvas h5 {
+    font-weight: normal; font-size: inherit;
+}
+
+.dev-canvas.base-cydn {
+    --base: #1B1E23;
+    --dark: #151618;
+    --light: #2B3036;
+    --lightaccent1: #8B939F;
+    --lightaccent2: #363C47;
+    --stroke: #292E37;
+    --gradient: linear-gradient(#151618, #1E2226);
+    --text: #A8ACB2;
+}
+/* Canvas provisional */
+
+.dev-canvas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 50px;
+}
+
+.cydn {
+    width: 700px;
+    background: var(--dark);
+    border: 1px solid var(--stroke);
+    padding-top: 190px;
+    font-family: 'Asul';
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+.cydn *::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cydn *::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0), 0);
+}
+
+.cydn *::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.103);
+        border-radius: 20px;
+}
+
+.cydn-1 {
+    background: var(--base);
+    border-block: 1px solid var(--stroke);
+    padding-bottom: 70px;
+    padding-inline: 28px;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+}
+
+.cydn .foto-principal {
+    width: 185px;
+    height: 185px;
+    background: black;
+    border: 1px solid #3B4148;
+    box-shadow: 0 0 0 20px #1B1E23, 0 0 0 21px #2B3036;
+    align-self: center;
+    margin-top: -80px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.cydn-1 h2 {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    font-family: 'UnifrakturMaguntia';
+    font-size: 55px;
+    text-transform: lowercase;
+    margin: 10px -100px;
+    color: var(--lightaccent1);
+    text-shadow: 2px 0px var(--lightaccent2), -2px 0px var(--lightaccent2), 0px 2px var(--lightaccent2), 0px -2px var(--lightaccent2);
+}
+
+.cydn-1a {
+    position: relative;
+    width: 537px;
+    height: 477px;
+    background: url('https://i.imgur.com/MALrKEW.png')
+}
+
+.cydn .foto-secundaria {
+    width: 136px;
+    height: 136px;
+    background: black;
+    border: 1px solid #3B4148;
+    box-shadow: 0 0 0 20px #1B1E23, 0 0 0 21px #2B3036;
+    border-radius: 100%;
+    margin: 50px;
+}
+
+.cydn-datos-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin: -100px;
+    gap: 50px;
+}
+
+.cydn .datos-personales {
+    background: #22252B;
+    width: 232px;
+    border-radius: 12px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #42464D;
+    margin-left: -50px;
+}
+
+.cydn .rasgos {
+    width: 215px;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-right: -300px;
+    background: #1B1E23;
+    border: 1px solid #4B5159;
+    border-radius: 30px;
+}
+
+.cydn-datos-container p {
+    white-space: pre;
+    font-size: 15px;
+    line-height: 1.45;
+    background: #22252B;
+}
+
+.cydn-datos-container p:nth-child(2) {
+    text-align: right;
+}
+
+.cydn-1 .stats {
+    background: #1B1E23;
+    border: 1px solid #4B5159;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.cydn-1 .stats div {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 10px;
+    background: #22252A;
+    border: var(--light);
+    text-align: center;
+    font-size: 25px;
+    border-radius: 8px;
+    b {
+        display: block;
+    }
+}
+
+.cydn-2 {
+    display: flex;
+    flex-flow: column;
+    border-bottom: 1px solid var(--stroke);
+    padding: 60px 30px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.cydn-2 h2 {
+    align-self: center;
+    font-family: 'UnifrakturMaguntia';
+    font-size: 70px;
+    text-transform: lowercase;
+    color: var(--lightaccent1);
+    margin-top: -95px;
+    text-shadow: 2px 0px var(--lightaccent2), -2px 0px var(--lightaccent2), 0px 2px var(--lightaccent2), 0px -2px var(--lightaccent2);
+}
+
+.cydn-bitacora-container {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 350px;
+    gap: 30px;
+}
+
+.cydn-bitacora-container div {
+    border: 1px solid var(--light);
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 30px;
+}
+
+.cydn-bitacora-container div:nth-of-type(1) {
+    background: #1D2024;
+}
+
+.cydn-bitacora-container div:nth-of-type(2) {
+    background: #00000007;
+}
+
+.cydn-bitacora-container h3 {
+    color: var(--lightaccent1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cydn-3 {
+    display: flex;
+    background: var(--base);
+    flex-flow: column;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.cydn-3 .historial {
+    padding: 50px;
+    background: #181a1e;
+    border: 1px solid var(--stroke);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 85%;
+    height: 100px;
+}
+
+.cydn-3 .historial:nth-of-type(even) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    right: 0;
+    text-align: right;
+}
+
+.cydn-3 h2 {
+    align-self: center;
+    font-family: 'UnifrakturMaguntia';
+    font-size: 40px;
+    margin-top: -10px;
+    text-transform: lowercase;
+    color: var(--lightaccent1);
+    text-shadow: 2px 0px var(--lightaccent2), -2px 0px var(--lightaccent2), 0px 2px var(--lightaccent2), 0px -2px var(--lightaccent2);
+    padding-bottom: 10px;
+}
+
+/* Efecto hover */
+
+.cydn {
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+    transition: 2s;
+    transition-delay: 10000000s;
+}
+
+.cydn:hover {
+    height: auto;
+    transition-delay: 0s;
+}
+
+.cydn-cover {
+    top: 0;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: url('https://i.imgur.com/A8XNClS.png');
+    z-index: 10;
+    transition: 1s;
+    transition-delay: 10000000s;
+}
+
+.cydn:hover .cydn-cover {
+    transform: translateY(-100%);
+    transition-delay: 0s;
+}
+
