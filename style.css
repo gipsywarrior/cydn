@@ -227,6 +227,11 @@ body {
     color: var(--lightaccent1);
     font-weight: bold;
     font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.cydn-bitacora-container h3:not(.cydn-bitacora-container h3:first-child) {
+    margin-top: 25px;
 }
 
 .cydn-3 {
